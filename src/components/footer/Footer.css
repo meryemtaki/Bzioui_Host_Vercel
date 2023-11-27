@@ -1,0 +1,270 @@
+footer {
+  padding: 0 4rem;
+  padding-bottom: 1rem;
+  background-color: #eff1f5;
+}
+
+footer .inscription {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #e4e4e4;
+
+  padding-top: 1rem;
+}
+
+footer .inscription .logo {
+  flex: 1;
+}
+
+footer .inscription .formulaire {
+  flex: 1;
+}
+
+footer .inscription img {
+  width: 9rem;
+}
+
+footer .inscription h2 {
+  color: #27245e;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  font-size: 1.6rem;
+}
+
+footer .inscription p {
+  color: #bc994c;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+footer .inscription input {
+  padding: 0.75rem;
+  width: 81%;
+  background: #ffffff;
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+footer .inscription button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  background: #3b3a5e;
+  border: none;
+  color: #ffffff;
+  transition: 0.4s ease-in-out;
+}
+
+footer .inscription button:hover {
+  color: #bc994c;
+  cursor: pointer;
+  background-color: #0a0b3b;
+}
+
+footer input::placeholder {
+  color: #bbbbbb;
+  font-size: 1rem;
+}
+
+.navigation-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  gap: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.navigation-contact .navigation {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 5rem;
+}
+
+.navigation-contact .contact {
+  flex: 1;
+  color: #ffffff;
+  border-radius: 5px;
+  background: #bc994c;
+  padding: 2rem;
+  margin-left: 119px;
+}
+
+.navigation-contact .contact h3 {
+  color: #3b3a5d;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.navigation-contact .contact .info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.navigation-contact .contact .info p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navigation .entreprise-nav .nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.navigation h3 {
+  margin-bottom: 1rem;
+  color: #3b3a5d;
+  font-size: 1.5rem;
+}
+
+.entreprise-nav .nav a,
+.projects-nav .nav a {
+  text-decoration: none;
+  color: #bc994c;
+  font-size: 1.1rem;
+}
+
+.navigation-contact .navigation .projects-nav .nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.underline {
+  width: 100%;
+  height: 3px;
+  background: #bc994c;
+  margin-left: 0px;
+  margin-bottom: 10px;
+
+}
+
+.copyright {
+  text-align: center;
+}
+
+.copyright p {
+  color: #8d8d8d;
+  font-size: 1.1rem;
+}
+
+/* ===============MEDIA QUERIES ============== */
+
+@media screen and (max-width: 960px) {
+  footer {
+    padding: 0 2rem;
+  }
+
+  footer .inscription .logo {
+    flex: 2;
+  }
+
+  footer .inscription .formulaire {
+    flex: 3;
+  }
+
+  footer .inscription h2 {
+    font-size: 1.5rem;
+  }
+
+  footer .navigation-contact {
+    gap: 2rem;
+  }
+
+  footer .navigation-contact .navigation {
+    padding-left: 2rem;
+    flex: 2;
+  }
+
+  footer .navigation-contact .contact {
+    flex: 3;
+    color: #ffffff;
+    border-radius: 5px;
+    background: #bc994c;
+    padding: 2rem;
+    margin-left: 62px;
+  }
+  footer .navigation-contact .contact .info{
+    padding-right: 60px;
+    width: 140%;
+}
+
+  footer .navigation-contact .projects-nav {
+    display: none;
+  }
+
+  .copyright p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    padding: 0 1rem;
+  }
+
+  footer .inscription .logo {
+    display: none;
+  }
+
+
+  footer .inscription h2 {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+  }
+
+  footer .inscription p {
+    color: #bc994c;
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+  }
+  footer .inscription input {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  footer input::placeholder {
+    color: #bbbbbb;
+    font-size: 0.85rem;
+  }
+
+  footer .navigation-contact .navigation {
+    display: none;
+  }
+
+ footer .navigation-contact .contact {
+    color: #ffffff;
+    border-radius: 5px;
+    background: #bc994c;
+    padding: 2rem;
+    margin-left: 0px;
+    width: 100%;
+  }
+  footer .navigation-contact .contact .info{
+    padding-right: 110px;
+    width: 140%;
+}
+  .copyright {
+    padding-bottom: 0.5rem;
+  }
+
+  .copyright p {
+    font-size: 0.65rem;
+  }
+
+  .navigation-contact .contact h3 {
+    font-size: 1.25rem;
+  }
+
+  .navigation-contact .contact .info p {
+    font-size: 0.9rem;
+  }
+}

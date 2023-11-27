@@ -1,0 +1,112 @@
+.experiences {
+  padding: 2rem 4rem;
+  max-width: 1600px;
+  margin: 0 auto;
+  background: url(../../assets/banner.png),
+    lightgray 3.671px -236.702px / 100% 133.155% no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 580px;
+}
+
+.experiences::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.experiences .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content-experiences {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 4rem;
+  margin: 0 auto;
+  position: absolute;
+}
+
+.content-experiences img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.content-experiences .exp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-experiences .exp .number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3b3a5d;
+}
+
+.content-experiences .exp .text-exp {
+  color: #b16642;
+  font-size: 1.2rem;
+}
+
+.text-para {
+  width: 720px;
+  color: #3b3a5d;
+  font-size: 1.1rem;
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 600px) {
+  .experiences {
+    padding: 2rem;
+    height: 500px;
+  }
+
+  .content-experiences {
+    width: auto;
+    gap: 4rem;
+    justify-content: center;
+  }
+
+  .content-experiences img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .content-experiences .exp .number {
+    font-size: 1.25rem;
+  }
+
+  .content-experiences .exp .text-exp {
+    color: #b16642;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .text-para {
+    width: 92%;
+    font-size: 0.85rem;
+    line-height: 1.25rem;
+    top: 65%;
+  }
+}

@@ -1,0 +1,119 @@
+.presentation {
+  padding: 4rem 6rem;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.presentation .text {
+  border-radius: 5px;
+  background: #eff1f5;
+  padding: 2.5rem 4rem 5rem 2rem;
+  flex: 1;
+}
+
+.presentation .image {
+  flex: 1;
+}
+
+.presentation .image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.presentation h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3b3a5d;
+  margin-bottom: 1.2rem;
+}
+
+.presentation .para {
+  color: #bc994c;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.presentation .props {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.props p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #757575;
+}
+
+.presentation video {
+  border-radius: 0.5rem;
+}
+
+.presentation .video {
+  border-radius: 0.5rem;
+}
+
+/* ====================MEDIA QUERIES =============== */
+
+@media screen and (max-width: 1280px) {
+  .presentation {
+    padding: 2.5rem;
+    gap: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .presentation .text {
+    padding: 2rem;
+  }
+
+  .presentation h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .presentation .para {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .presentation {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .presentation {
+    padding: 2rem 1rem;
+  }
+  .presentation .text {
+    padding: 2rem 1.5rem;
+  }
+  .presentation h2 {
+    font-size: 1.25rem;
+  }
+
+  .presentation .para {
+    font-size: 0.9rem;
+  }
+
+  .presentation svg {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  .presentation .props {
+    flex-wrap: wrap;
+  }
+
+  .props p {
+    font-size: 0.9rem;
+  }
+}

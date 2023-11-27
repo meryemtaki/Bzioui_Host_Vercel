@@ -1,0 +1,20 @@
+.cardlvcm{
+    margin-left: 240px;
+}
+.btn-lv{
+    color:white ;
+    background-color: #27245f;
+}
+.btn-lv:hover{
+    color:#bc994c ;
+    background-color: #27245f;
+}
+@media screen and (max-width: 600px) {
+    .cardlvcm{
+        margin-left: 10px;
+    }
+    .btn-lv{
+        margin-left: 100px;
+    }
+}
+    

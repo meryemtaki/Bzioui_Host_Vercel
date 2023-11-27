@@ -1,0 +1,89 @@
+.partenaires {
+  padding: 4rem;
+}
+
+.content-parte {
+  padding: 2rem 0;
+  background: #eff1f5;
+  max-width: 1600px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.title-parte {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.partenaires .content-logo {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.partenaires .button {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.partenaires .button button {
+  padding: 0.8rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  color: #3b3a5d;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.partenaires .button button:hover {
+  gap: 1.1rem;
+  color: #bc994c;
+  background-color: #0a0b3b;
+}
+
+/* ===============MEDIA QUERIES ============== */
+
+@media screen and (max-width: 960px) {
+  .partenaires {
+    padding: 2rem;
+  }
+
+  .content-parte img {
+    width: 6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .partenaires {
+    padding: 2rem 0.5rem;
+  }
+
+  .content-parte img {
+    width: 5rem;
+  }
+
+  .content-parte {
+    padding: 2rem 0.5rem;
+  }
+
+  .partenaires .button button {
+    padding: 0.7rem 1.6rem;
+    font-size: 0.8rem;
+  }
+}

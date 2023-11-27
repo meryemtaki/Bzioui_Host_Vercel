@@ -1,0 +1,209 @@
+.whyus {
+  padding: 2.5rem 4rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.whyus .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.whyus .content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.whyus .content .text {
+  flex: 3;
+  color: #3b3a5d;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.whyus .content .text .para1 {
+  margin-bottom: 1rem;
+}
+
+.whyus .content .text .para2 {
+  margin-bottom: 2.5rem;
+}
+
+.whyus .content .text button {
+  padding: 1.4rem 3rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  background: #3b3a5d;
+  border-radius: 5px;
+  gap: 1rem;
+  color: #ffffff;
+  font-weight: 600;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  margin-left: 300px;
+}
+
+.whyus .content .text button:hover {
+  gap: 1.1rem;
+  color: #bc994c;
+}
+
+.whyus .content .image {
+  flex: 2;
+}
+
+.whyus .content img {
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+.whyus .bottom {
+  margin-top: 5rem;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.whyus .bottom .reason {
+  border-radius: 5px;
+  background: linear-gradient(
+    150deg,
+    #ffbb50 -20%,
+    rgba(255, 216, 153, 0.39) 50%,
+    rgba(235, 165, 54, 0) 100%
+  );
+  padding: 2rem 1.5rem;
+}
+
+.bottom .reason .circle {
+  width: 80px;
+  height: 80px;
+  background-color: #bc994c;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.bottom .reason .circle p {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.bottom .reason h3 {
+  color: #3b3a5d;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.bottom .reason .para {
+  color: #3b3a5d;
+  font-size: 1rem;
+}
+
+/* ===============MEDIA QUERIES ============== */
+
+@media screen and (max-width: 1280px) {
+  .whyus .content {
+    gap: 2.5rem;
+  }
+
+  .whyus .content .image {
+    flex: 2.5;
+  }
+  .whyus .content .text {
+    flex: 3;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .whyus {
+    padding: 2rem;
+  }
+  .whyus .content {
+    flex-direction: column-reverse;
+  }
+
+  .whyus .content .image {
+    flex: 1;
+  }
+
+  .whyus .content .text {
+    flex: 1;
+    font-size: 1.05rem;
+  }
+
+  .whyus .bottom {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .whyus .bottom .reason {
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .whyus .bottom .reason {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .whyus {
+    padding: 2rem 1rem;
+  }
+
+  .whyus .title {
+    margin-bottom: 2rem;
+  }
+
+  .whyus .content {
+    gap: 2rem;
+  }
+
+  .whyus .content .text {
+    font-size: 0.9rem;
+  }
+
+  .whyus .content .text .para1 {
+    margin-bottom: 0.8rem;
+  }
+
+  .whyus .content .text .para2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .whyus .content .text button {
+    padding: 0.7rem 1.8rem;
+  }
+
+  .whyus .bottom .reason {
+    padding: 1.5rem 1rem;
+    box-shadow: 1px 1px 4px #e4e4ea;
+  }
+
+  .bottom .reason .circle {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+  }
+
+  .bottom .reason .circle p {
+    font-size: 1.2rem;
+  }
+
+  .bottom .reason h3 {
+    font-size: 1.25rem;
+  }
+
+  .bottom .reason .para {
+    font-size: 0.85rem;
+  }
+}
